@@ -110,6 +110,7 @@ section {
     .section-heading,
     .section-subheading {
         color: white;
+        text-align: center;
     }
     .form-group {
         margin-bottom: 25px;
@@ -123,6 +124,9 @@ section {
         textarea.form-control {
             height: 236px;
         }
+    }
+    p {
+        text-align: center;
     }
 }
 .btn-xl {
