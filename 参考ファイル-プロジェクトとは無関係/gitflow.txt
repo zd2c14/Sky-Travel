@@ -1,0 +1,91 @@
+﻿Git作業の流れ
+
+①環境構築
+
+bash起動
+
+プロジェクトフォルダに移動
+cd ~/Desktop/.../Bootstrap-Project.data
+
+ローカルリポジトリの作成
+gi (git init)
+
+除外ファイルを作成
+gitignore (vim .gitignore)
+- - -
+node_modules/
+assets/stylesheets/bootstrap/
+assets/javascript/
+- - -
+
+全てをアド
+ga. (git add .)
+
+コミット
+gcm "first commit" (git commit -m "...")
+
+ブランチ作成して移動
+gbch develop
+
+②指定項目その1
+
+アドコミット
+gacm "cdn&fonts"
+
+③指定項目その2
+
+アドコミット
+gacm "gnav"
+
+④指定項目その3
+
+アドコミット
+gacm "carousel"
+
+⑤指定項目その4
+
+アドコミット
+gacm "service"
+
+⑥指定項目その5
+
+アドコミット
+gacm "our team"
+
+⑦指定項目その6
+
+アドコミット
+gacm "contact"
+
+⑧指定項目その7
+
+アドコミット
+gacm "GoogleMap"
+
+⑨指定項目その8
+
+アドコミット
+gacm "footer"
+
+⑩指定項目その9
+
+アドコミット
+gacm "varables"
+
+
+- - - - -
+
+□addをキャンセルする場合
+gz (git reset --hard HEAD)
+
+□特定のコミットに戻る場合
+gl (git log) 戻りたいID番号をコピー
+gzi ID番号 (git reset --hard ID番号)
+
+□コミットの差分進行コードだけを確認したい場合
+gl (git log) 戻りたいID番号をコピー
+gsh ID番号 (git show ID番号)
+
+□マスターにマージしたい場合
+gch master 
+gmg develop
